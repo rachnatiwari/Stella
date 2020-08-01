@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Link} from 'react-router-dom';
 import data from '../data';
 
 function HomeScreen(props){
+
+    const [products,setProduct] = useState([]);
+
+    useEffect(() => {
+        effect
+        return() => {
+
+        };
+    }, [])
+
     return(
         <ul className="products">
             {
