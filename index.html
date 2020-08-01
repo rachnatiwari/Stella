@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js"> <!--<![endif]-->
+<html className="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,82 +9,104 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="grid-container">
-            <header class="header">
-                <div class="brand">
+        <div className="grid-container">
+            <header className="header">
+                <div className="brand">
+                    <button onclick="openMenu()"> &#9776 </button>
                     <a href="index.html">Stella</a>
                 </div>
-                <div class="header-links">
+                <div className="header-links">
                     <a href="cart.html">Cart</a>
                     <a href="signin.html">Sign In</a>
                 </div>
             </header>
-            <!-- <aside>Shopping Categories</aside> -->
-            <main class="main">
-                <div class="content">
-                    <ul class="products">
+            <aside className="sidebar">
+                <h3>Flowers Category</h3>
+                <button className="sidebar-close-button" onclick="closeMenu()">x</button>
+                <ul>
+                    <li>
+                        <a href="pnats.html">Roses</a>
+                    </li>
+                    <li>
+                        <a href="pnats.html">Hydrangea</a>
+                    </li>
+                    <li>
+                        <a href="pnats.html">Orchids</a>
+                    </li>
+                </ul>
+            </aside>
+            <main className="main">
+                <div className="content">
+                    <ul className="products">
                         <li>
-                            <div class="product">
-                                <img class="product-image" src="images/White_Roses.png" alt="White Roses.png">
-                                <div class="product-name">
+                            <div className="product">
+                                <img className="product-image" src="images/White_Roses.png" alt="White Roses.png">
+                                <div className="product-name">
                                     <a href="product.html">White Roses</a>
                                 </div>
-                                <div class="product-brand">Ferns & Petals</div>
-                                <div class="product-price">$30</div>
-                                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+                                <div className="product-brand">Ferns & Petals</div>
+                                <div className="product-price">$30</div>
+                                <div className="product-rating">4.5 Stars (10 Reviews)</div>
                             </div>
                         </li>
                         <li>
-                            <div class="product">
-                                <img class="product-image" src="images/White_Roses.png" alt="White Roses.png">
-                                <div class="product-name">
+                            <div className="product">
+                                <img className="product-image" src="images/White_Roses.png" alt="White Roses.png">
+                                <div className="product-name">
                                     <a href="product.html">White Roses</a>
                                 </div>
-                                <div class="product-brand">Ferns & Petals</div>
-                                <div class="product-price">$30</div>
-                                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+                                <div className="product-brand">Ferns & Petals</div>
+                                <div className="product-price">$30</div>
+                                <div className="product-rating">4.5 Stars (10 Reviews)</div>
                             </div>
                         </li>
                         <li>
-                            <div class="product">
-                                <img class="product-image" src="images/White_Roses.png" alt="White Roses.png">
-                                <div class="product-name">
+                            <div className="product">
+                                <img className="product-image" src="images/White_Roses.png" alt="White Roses.png">
+                                <div className="product-name">
                                     <a href="product.html">White Roses</a>
                                 </div>
-                                <div class="product-brand">Ferns & Petals</div>
-                                <div class="product-price">$30</div>
-                                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+                                <div className="product-brand">Ferns & Petals</div>
+                                <div className="product-price">$30</div>
+                                <div className="product-rating">4.5 Stars (10 Reviews)</div>
                             </div>
                         </li>
                         <li>
-                            <div class="product">
-                                <img class="product-image" src="images/White_Roses.png" alt="White Roses.png">
-                                <div class="product-name">
+                            <div className="product">
+                                <img className="product-image" src="images/White_Roses.png" alt="White Roses.png">
+                                <div className="product-name">
                                     <a href="product.html">White Roses</a>
                                 </div>
-                                <div class="product-brand">Ferns & Petals</div>
-                                <div class="product-price">$30</div>
-                                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+                                <div className="product-brand">Ferns & Petals</div>
+                                <div className="product-price">$30</div>
+                                <div className="product-rating">4.5 Stars (10 Reviews)</div>
                             </div>
                         </li>
                         <li>
-                            <div class="product">
-                                <img class="product-image" src="images/White_Roses.png" alt="White Roses.png">
-                                <div class="product-name">
+                            <div className="product">
+                                <img className="product-image" src="images/White_Roses.png" alt="White Roses.png">
+                                <div className="product-name">
                                     <a href="product.html">White Roses</a>
                                 </div>
-                                <div class="product-brand">Ferns & Petals</div>
-                                <div class="product-price">$30</div>
-                                <div class="product-rating">4.5 Stars (10 Reviews)</div>
+                                <div className="product-brand">Ferns & Petals</div>
+                                <div className="product-price">$30</div>
+                                <div className="product-rating">4.5 Stars (10 Reviews)</div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </main>
-            <footer class="footer">
+            <footer className="footer">
                 By : Rachna Tiwari
             </footer>
         </div>
-        <script src="" async defer></script>
+        <script>
+            function openMenu(){
+                document.querySelector(".sidebar").classNameList.add("open") ;
+            }
+            function closeMenu(){
+                document.querySelector(".sidebar").classNameList.remove("open") ;
+            }
+        </script>
     </body>
 </html>

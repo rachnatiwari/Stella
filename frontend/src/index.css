@@ -7,7 +7,9 @@ body{
   font: 1.6rem Helvetica;
   height: 100vh;
   margin: 0;
-  background-color: rgba(255,213,208);
+  /* background-color: whitesmoke; */
+  /* background-color: rgba(223, 243, 183, 0.6); */
+  /* background-color: rgba(255,213,208); */
 }
 
 #root{
@@ -45,6 +47,14 @@ body{
   align-items: center;
 }
 
+.brand button{
+  font-size: xx-large;
+}
+
+.brand button:hover{
+  color: pink ;
+}
+
 .brand a{
   color: beige;
   font-size : 2.5rem;
@@ -65,7 +75,8 @@ a{
 }
 
 a:hover{
-  color: rgba(226, 114, 138, 0.849);
+  color: pink;
+  /* color: rgba(226, 114, 138, 0.849); */
 }
 
 /* Home Screen */
@@ -84,7 +95,7 @@ a:hover{
   height: 50rem;
   border-bottom: .1rem #e9a2bc solid;
   padding: 2rem;
-  background-color: beige;
+  /* background-color: beige; */
 }
 
 .product-name{
@@ -133,9 +144,18 @@ a:hover{
   transition: all .5s;
   transform: translateX(-30rem);
   width : 30rem;
-  background-color: gold;
+  background-color: rgba(245, 245, 219,0.9);
   height: 100%;
+  color: #C40047;
 }
+
+/* .sidebar a{
+  color: #C40047;
+}
+
+.sidebar a:hover{
+  color: #ec095c;
+} */
 
 .sidebar.open{
   transform: translateX(0);

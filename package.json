@@ -1,0 +1,22 @@
+{
+  "name": "stella",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachnatiwari/Stella.git"
+  },
+  "author": "Rachna Tiwari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rachnatiwari/Stella/issues"
+  },
+  "homepage": "https://github.com/rachnatiwari/Stella#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

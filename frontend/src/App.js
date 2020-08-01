@@ -20,7 +20,7 @@ function App() {
         <div className="grid-container">
                 <header className="header">
                     <div className="brand">
-                        <button onClick={openMenu}> &#9776 </button>
+                        <button onClick={openMenu}> + </button>
                         <Link to="/"> Stella</Link>
                     </div>
                     <div className="header-links">
