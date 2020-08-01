@@ -1,6 +1,7 @@
 export default {
     products : [
         {
+            _id:'1',
             name: "White Roses",
             image: "/images/White_Roses.png",
             price: 30,
@@ -9,6 +10,7 @@ export default {
             numReviews: 10
         },
         {
+            _id:'4',
             name: "Purple Hydrangea",
             image: "/images/Purple_Hydrangea.png",
             price: 27,
@@ -17,6 +19,7 @@ export default {
             numReviews: 8
         },
         {
+            _id:'2',
             name: "White Lavender",
             image: "/images/White_Lavender.png",
             price: 22,
@@ -25,6 +28,7 @@ export default {
             numReviews: 23
         },
         {
+            _id:'3',
             name: "Dusky Pink Roses",
             image: "/images/Dusky_Pink_Roses.png",
             price: 19,
