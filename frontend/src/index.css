@@ -219,7 +219,7 @@ a:hover{
   border : 0.1rem #C40047 solid;
   border-radius: 1rem;
   background-color: beige;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .details-action ul li:last-child{

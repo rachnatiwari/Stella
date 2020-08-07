@@ -7,7 +7,8 @@ export default {
             price: 30,
             brand: "YiliyaJia",
             rating: "4.5",
-            numReviews: 10
+            numReviews: 10,
+            countInStock: 0
         },
         {
             _id:'4',
@@ -16,7 +17,8 @@ export default {
             price: 27,
             brand: "Sanran",
             rating: "4",
-            numReviews: 8
+            numReviews: 8,
+            countInStock: 3
         },
         {
             _id:'2',
@@ -25,7 +27,8 @@ export default {
             price: 22,
             brand: "Nurbi",
             rating: "2.5",
-            numReviews: 23
+            numReviews: 23,
+            countInStock: 10
         },
         {
             _id:'3',
@@ -34,7 +37,8 @@ export default {
             price: 19,
             brand: "WenXin",
             rating: "3",
-            numReviews: 12
+            numReviews: 12,
+            countInStock: 9
         }
     ]
 }
