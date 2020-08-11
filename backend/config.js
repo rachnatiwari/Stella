@@ -1,3 +1,4 @@
 export default {
-    MONGODB_URL : process.env.MONGODB_URL || 'mongodb://localhost/stella'
+    MONGODB_URL : process.env.MONGODB_URL || 'mongodb://localhost/stella',
+    JWT_SECRET: process.env.JWT_SECRET || 'thisisasecretkey'
 }

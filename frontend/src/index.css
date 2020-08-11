@@ -249,6 +249,27 @@ a:hover{
   background-color: #ec095c;
 }
 
+.button.primary{
+  background-color: #C40047;
+  color: beige;
+}
+
+.button.primary:hover{
+  background-color: #ec095c;
+}
+
+.button.secondary{
+  background-color: #C40047;
+}
+
+.button.secondary:hover{
+  background-color: #ec095c;
+}
+
+.text-center{
+  text-align: center;
+}
+
 /* Cart */
 
 .cart {
@@ -298,4 +319,37 @@ a:hover{
   flex: 1 1;
   font-size: 2.5rem;
   text-align: right;
+}
+
+/* Forms */
+
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  padding: 2rem;
+  border: .3rem #C40047 solid;
+  border-radius: 2rem;
+  list-style-type: none;
+  background-color: beige;
+}
+
+.form-container li{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-top: 1rem; 
+}
+
+input{
+  padding: 1rem;
+  border: 0.2rem #e9a2bc solid;
+  border-radius: 0.5rem;
 }
