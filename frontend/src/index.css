@@ -373,3 +373,72 @@ input{
 tbody>tr:nth-child(odd){
   background-color: lightgrey;
 }
+
+/* Checkout Steps */
+
+.checkout-steps{
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+  margin: 1rem auto;
+}
+
+.checkout-steps>div{
+  border-top: 0.3rem lightgrey;
+  color: lightgrey;
+  flex: 1 1;
+  padding-top: 1rem;
+}
+
+.checkout-steps>div.active{
+  border-top: 0.3rem #C40047 solid;
+  color: #C40047;
+}
+
+/* Place Order */
+
+.placeorder{
+  display: flex;
+  flex-grow: wrap;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.placeorder-info{
+  flex: 3 1 60rem;
+}
+
+.placeorder-action{
+  flex: 1 1 20rem;
+  border: 0.1rem lightgray solid;
+  border-radius: 0.5rem;
+  background-color: beige;
+  padding: 1rem;
+}
+
+.placeorder-info>div{
+  border: 0.1rem lightgray solid;
+  border-radius: 0.5rem;
+  background-color: beige;
+  padding: 1rem;
+}
+
+.placeorder-info>div:first-child{
+  margin-top: 0;
+}
+
+.placeorder-action>ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+.placeorder-action>ul>li{
+  display: flex;
+  justify-content: space-between;
+}
+
+.placeorder-action>ul>li:last-child{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #C40047;
+}
