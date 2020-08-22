@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter,Route,Link} from 'react-router-dom';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './App.css';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
@@ -11,6 +11,9 @@ import ProductsScreen from './screens/ProductsScreen';
 import ShippingScreen from './screens/ShippingScreen';
 import PaymentScreen from './screens/PaymentScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
+import OrderScreen from './screens/OrderScreen';
+import ProfileScreen from './screens/ProfileScreen';
+import OrdersScreen from './screens/OrdersScreen';
 
 function App() {
 
@@ -30,7 +33,7 @@ function App() {
         <div className="grid-container">
                 <header className="header">
                     <div className="brand">
-                        <button onClick={openMenu}> + </button>
+                        <button onClick={openMenu}> &#9776; </button>
                         <Link to="/"> Stella</Link>
                     </div>
                     <div className="header-links">
@@ -39,34 +42,50 @@ function App() {
                             userInfo ? <Link to="/profile"> {userInfo.name} </Link> : 
                             <Link to="/signin">SignIn</Link>
                         }
+                        {userInfo && userInfo.isAdmin && (
+                            <div className="dropdown">
+                                <a href="#">Admin</a>
+                                <ul className="dropdown-content">
+                                <li>
+                                    <Link to="/orders">Orders</Link>
+                                    <Link to="/products">Products</Link>
+                                </li>
+                                </ul>
+                            </div>
+                            )
+                        }
                     </div>
                 </header>
                 <aside className="sidebar">
-                    <h3>Flowers Category</h3>
-                    <button className="sidebar-close-button" onClick={closeMenu}>x</button>
-                    <ul>
+                    <h3>Flower Categories</h3>
+                    <button className="sidebar-close-button" onClick={closeMenu}>
+                        x
+                    </button>
+                    <ul className="categories">
                         <li>
-                            <a href="pnats.html">Roses</a>
+                        <Link to="/category/Real">Real</Link>
                         </li>
+
                         <li>
-                            <a href="pnats.html">Hydrangea</a>
-                        </li>
-                        <li>
-                            <a href="pnats.html">Orchids</a>
+                        <Link to="/category/Artificial">Artificial</Link>
                         </li>
                     </ul>
                 </aside>
                 <main className="main">
                     <div className="content">
-                    <Route path="/products" component={ProductsScreen} />    
-                    <Route path="/shipping" component={ShippingScreen} />    
-                    <Route path="/payment" component={PaymentScreen} />    
-                    <Route path="/placeorder" component={PlaceOrderScreen} />    
-                    <Route path="/signin" component={SigninScreen} />
-                    <Route path="/register" component={RegisterScreen} />
-                    <Route path="/products/:id" component={ProductScreen} />
-                    <Route path="/cart/:id?" component={CartScreen} />
-                    <Route path="/" exact={true} component={HomeScreen} />
+                        <Route path="/orders" component={OrdersScreen} />
+                        <Route path="/profile" component={ProfileScreen} />
+                        <Route path="/order/:id" component={OrderScreen} />
+                        <Route path="/products" component={ProductsScreen} />
+                        <Route path="/shipping" component={ShippingScreen} />
+                        <Route path="/payment" component={PaymentScreen} />
+                        <Route path="/placeorder" component={PlaceOrderScreen} />
+                        <Route path="/signin" component={SigninScreen} />
+                        <Route path="/register" component={RegisterScreen} />
+                        <Route path="/product/:id" component={ProductScreen} />
+                        <Route path="/cart/:id?" component={CartScreen} />
+                        <Route path="/category/:id" component={HomeScreen} />
+                        <Route path="/" exact={true} component={HomeScreen} />
                     </div>
                 </main>
                 <footer className="footer">

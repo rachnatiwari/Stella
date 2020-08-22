@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "nodemon --watch backend --exec babel-node backend/server.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rachnatiwari/Stella.git"
+  },
+  "scripts": {
+    "start": "nodemon --watch backend --exec babel-node backend/server.js",
+    "build": "rm -rf dist && babel backend -d dist",
+    "heroku-postbuild": "npm run build && cd frontend && npm install && npm run build"
   },
   "author": "Rachna Tiwari",
   "license": "ISC",
@@ -17,17 +19,26 @@
   },
   "homepage": "https://github.com/rachnatiwari/Stella#readme",
   "dependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.0",
-    "@babel/node": "^7.10.5",
-    "@babel/preset-env": "^7.11.0",
+    "aws-sdk": "^2.702.0",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
+    "eslint-plugin-react": "^7.19.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.28"
+    "mongoose": "^5.8.11",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "nodemon": "^2.0.2"
   }
 }
