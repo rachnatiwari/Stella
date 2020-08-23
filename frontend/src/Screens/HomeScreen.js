@@ -40,16 +40,8 @@ function HomeScreen(props) {
               name="searchKeyword"
               onChange={(e) => setSearchKeyword(e.target.value)}
             />
-            <button type="submit">Search</button>
+            <button type="submit" className="button">Search</button>
           </form>
-        </li>
-        <li>
-          Sort By{' '}
-          <select name="sortOrder" onChange={sortHandler}>
-            <option value="">Newest</option>
-            <option value="lowest">Lowest</option>
-            <option value="highest">Highest</option>
-          </select>
         </li>
       </ul>
       {loading ? (

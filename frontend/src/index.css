@@ -11,6 +11,7 @@ body{
 
 button{
   font-size: 1.6rem;
+  margin: 0.3rem;
 }
 
 .full-width{
@@ -112,6 +113,13 @@ a:hover{
 .product-name{
   font-size: 2rem;
   font-weight: bold;
+}
+
+.product-name a{
+  color: #C40047;
+}
+.product-name a:hover{
+  color: #e9a2bc;
 }
 
 .product-brand{
@@ -503,13 +511,17 @@ tbody>tr:nth-child(odd){
   position: absolute;
   display: none;
   right: 0;
-  padding: 1rem;
+  padding: 1.2rem;
   list-style-type: none;
   z-index: 1;
-  background-color: #C40047;
+  background-color: rgba(194, 0, 71, 0.9);
   color: beige;
   margin: 0;
   margin-top: 0.4rem;
+  border-radius: 15%;
+}
+.dropdown-content li{
+  padding: 0.5rem;
 }
 
 .dropdown:hover .dropdown-content {
@@ -531,8 +543,9 @@ tbody>tr:nth-child(odd){
 .filter input, .filter button, .filter select {
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 0.1rem pink solid;
+  border: 0.1rem #e9a2bc solid;
   font-size: 1.6rem;
+  margin: 0.3rem;
 }
 .categories {
   padding: 0;
@@ -541,8 +554,10 @@ tbody>tr:nth-child(odd){
 .categories a {
   display: flex;
   padding: 1rem;
+  color: darkolivegreen;
 }
 
 .categories a:hover {
-  background-color: #e9a2bc;
+  background-color: rgba(218, 165, 32, 0.5);
+  color: green;
 }

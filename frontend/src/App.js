@@ -37,17 +37,18 @@ function App() {
                         <Link to="/"> Stella</Link>
                     </div>
                     <div className="header-links">
-                        <a href="cart.html">Cart </a>
                         {
-                            userInfo ? <Link to="/profile"> {userInfo.name} </Link> : 
+                            userInfo ? <Link to="/profile"> {userInfo.name}    </Link> : 
                             <Link to="/signin">SignIn</Link>
                         }
                         {userInfo && userInfo.isAdmin && (
                             <div className="dropdown">
-                                <a href="#">Admin</a>
+                                <a href="#">    Admin</a>
                                 <ul className="dropdown-content">
                                 <li>
                                     <Link to="/orders">Orders</Link>
+                                </li>
+                                <li>
                                     <Link to="/products">Products</Link>
                                 </li>
                                 </ul>
@@ -63,12 +64,12 @@ function App() {
                     </button>
                     <ul className="categories">
                         <li>
-                        <Link to="/category/Real">Real</Link>
+                        <Link to="/">Will add categories soon!!!</Link>
                         </li>
 
-                        <li>
+                        {/* <li>
                         <Link to="/category/Artificial">Artificial</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </aside>
                 <main className="main">
