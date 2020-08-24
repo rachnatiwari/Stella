@@ -1,5 +1,6 @@
 # Stella - The Flower App
 - An E-commerce website for flowers enabled with a user and admin login where the user may place an order while admin can add items and confirm items to be shipped to users. Additionally, users may search and sort flowers according to their preferences. The application is enabled with the Paypal payment gateway to pay for respective orders.
+- [Video](https://drive.google.com/file/d/15JUlDmdFUYZca2TH2hTnnKS4T_3TpnHP/view?usp=sharing)
 
 ## Technology Stack (MERN)
 
